@@ -13,6 +13,13 @@ group :production do
 	gem 'pg'
 end
 
+# fitbit help
+gem 'omniauth-fitbit'
+gem 'fitgem'
+
+# secure environmental variables
+gem 'figaro'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets

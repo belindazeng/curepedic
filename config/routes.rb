@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
-  root 'static#main'
+  root 'fitbit_auth#index'
+  post "/auth/fitbit" => "fitbit_auth#make_request"
+  get "/auth/fitbit/callback" => "fitbit_auth#get_response"
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
